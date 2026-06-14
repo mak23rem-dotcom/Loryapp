@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta_title">LORY — Your AI Travel Buddy. Works Offline.</title>
+  <meta name="description" content="Meet LORY — the AI travel guide that works offline. Automatic audio stories as you walk. Plan trips by chatting. Join the waitlist." data-i18n="meta_desc" />
+
+  <meta property="og:title" content="LORY — Your AI Travel Buddy. Works Offline." data-i18n="og_title" />
+  <meta property="og:description" content="The only travel app with offline audio guides, AI trip planning, and smart souvenirs." data-i18n="og_desc" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta property="og:url" content="https://loryapp.ai" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="LORY — Your AI Travel Buddy" data-i18n="tw_title" />
+  <meta name="twitter:description" content="AI travel guide that works offline. Join the waitlist." data-i18n="tw_desc" />
+
+  <!-- Fonts: Space Grotesk + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#" class="logo"><img src="assets/lory-logo.png" alt="LORY" class="nav-logo-img" /></a>
+    <div class="nav-links">
+      <a href="#philosophy" data-i18n="nav_philosophy">Philosophy</a>
+      <a href="#features" data-i18n="nav_features">Features</a>
+      <a href="#lab" data-i18n="nav_lab">The Lab</a>
+
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en" aria-label="English">EN</button>
+        <button class="lang-btn" data-lang="fr" aria-label="Français">FR</button>
+        <button class="lang-btn" data-lang="ar" aria-label="العربية">AR</button>
+      </div>
+
+      <a href="#waitlist" class="nav-cta" data-i18n="nav_cta">Join the Waitlist</a>
+    </div>
+  </nav>
+
+  <!-- ==================== HERO: Split Layout ==================== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <span class="pulse-dot"></span>
+          <span data-i18n="hero_badge">LORYapp.ai — Official Guidelines</span>
+        </div>
+        <h1 data-i18n="hero_h1">
+          Your <span class="gradient-text">AI Travel Guide</span><br />That Works <span class="gradient-text">Offline</span>
+        </h1>
+        <p class="hero-sub" data-i18n="hero_sub">
+          Automatic audio stories as you walk. Plan trips by chatting with AI. All fully offline — no roaming, no data stress.
+        </p>
+        <div class="hero-buttons">
+          <a href="#waitlist" class="btn-primary" data-i18n="hero_btn">
+            Join the Waitlist <span class="arrow">→</span>
+          </a>
+          <div class="store-badges">
+            <div class="store-badge"><span class="store-icon">📱</span> App Store</div>
+            <div class="store-badge"><span class="store-icon">▶️</span> Google Play</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="phone-mockup">
+          <div class="phone-notch"></div>
+          <div class="phone-screen">
+            <div class="phone-header">
+              <span class="time">9:41</span>
+              <span class="status">📶 🔋</span>
+            </div>
+            <div class="phone-app-area" style="background:url('assets/promenade-des-anglais.jpg') center/cover no-repeat;">
+              <div class="phone-app-top">
+                <img src="assets/lory-logo.png" alt="LORY" class="phone-app-logo" />
+              </div>
+              <div class="phone-app-overlay"></div>
+              <div class="phone-bottom-card">
+                <div class="lory-avatar">
+                  <img src="assets/lory-mascot.png" alt="Lory" class="avatar-img" />
+                </div>
+                <div class="card-text">
+                  <div class="title">Promenade des Anglais</div>
+                  <div class="sub">2 min walk · Audio available</div>
+                </div>
+                <div class="play-btn">▶</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Lory mascot perched on the phone -->
+        <div class="hero-mascot-perch">
+          <img src="assets/lory-mascot.png" alt="Lory mascot" class="perch-img" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rainbow-bar"></div>
+
+  <!-- ==================== PHILOSOPHY GRID ==================== -->
+  <section class="section philosophy-section" id="philosophy">
+    <div class="container text-center">
+      <span class="section-label reveal" data-i18n="phil_label">Core Philosophy</span>
+      <h2 class="section-title reveal" data-i18n="phil_title">Built for how you travel</h2>
+      <p class="section-sub reveal" data-i18n="phil_sub">Every decision serves the explorer. Powerful tech, human touch.</p>
+    </div>
+    <div class="container">
+      <div class="philosophy-grid">
+        <div class="philosophy-card reveal reveal-delay-1">
+          <div class="card-icon">🎯</div>
+          <h3 data-i18n="phil_1_title">Purpose-Driven</h3>
+          <p data-i18n="phil_1_text">Clarity and function first. Every feature serves the traveler, wrapped in an approachable experience.</p>
+        </div>
+        <div class="philosophy-card reveal reveal-delay-2">
+          <div class="card-icon">⚡</div>
+          <h3 data-i18n="phil_2_title">Energetic</h3>
+          <p data-i18n="phil_2_text">Bold colors and dynamic interactions convey momentum and forward-thinking innovation.</p>
+        </div>
+        <div class="philosophy-card reveal reveal-delay-3">
+          <div class="card-icon">🤝</div>
+          <h3 data-i18n="phil_3_title">Approachable</h3>
+          <p data-i18n="phil_3_text">Rounded design and the Lory mascot make advanced AI feel friendly and accessible to everyone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rainbow-bar"></div>
+
+  <!-- ==================== FEATURE DEEP-DIVE: Row 1 ==================== -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="feature-row reveal">
+        <div class="feature-text">
+          <span class="feature-tag" data-i18n="feat1_tag">Agentic AI</span>
+          <h2 data-i18n="feat1_title">Real-time conversations<br />with your travel guide</h2>
+          <p data-i18n="feat1_text">LORY uses agentic AI to answer follow-up questions on the fly. Ask "Who built this?" or "What's good to eat nearby?" — and get instant, context-aware answers.</p>
+          <ul class="feature-list">
+            <li><span class="check">✓</span> <span data-i18n="feat1_list1">Conversational follow-ups in real time</span></li>
+            <li><span class="check">✓</span> <span data-i18n="feat1_list2">Context-aware responses based on your location</span></li>
+            <li><span class="check">✓</span> <span data-i18n="feat1_list3">Multilingual support — FR, EN, ES, IT, AR, ZH</span></li>
+          </ul>
+        </div>
+        <div class="feature-visual">
+          <div class="visual-box">
+            <img src="assets/lory-mascot.png" alt="Lory" class="feature-mascot tr" />
+            <span class="visual-icon">💬</span>
+            <span class="visual-label" data-i18n="feat1_vis_label">Agentic AI Chat</span>
+            <span class="visual-sub" data-i18n="feat1_vis_sub">Ask anything. Lory answers instantly.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rainbow-bar"></div>
+
+  <!-- ==================== FEATURE DEEP-DIVE: Row 2 (Reverse) ==================== -->
+  <section class="section">
+    <div class="container">
+      <div class="feature-row reverse reveal">
+        <div class="feature-text">
+          <span class="feature-tag" data-i18n="feat2_tag">Smart Retrieval</span>
+          <h2 data-i18n="feat2_title">Audio stories that<br />find you automatically</h2>
+          <p data-i18n="feat2_text">GPS-powered proximity triggers start narration as you approach any point of interest. Download once, listen offline — no signal required.</p>
+          <ul class="feature-list">
+            <li><span class="check">✓</span> <span data-i18n="feat2_list1">Automatic detection within 50m of any POI</span></li>
+            <li><span class="check">✓</span> <span data-i18n="feat2_list2">Full offline mode — maps and audio cached</span></li>
+            <li><span class="check">✓</span> <span data-i18n="feat2_list3">60-second immersive narratives per location</span></li>
+          </ul>
+        </div>
+        <div class="feature-visual">
+          <div class="visual-box">
+            <img src="assets/lory-mascot.png" alt="Lory" class="feature-mascot bl" />
+            <span class="visual-icon">🗺️</span>
+            <span class="visual-label" data-i18n="feat2_vis_label">Smart Audio Map</span>
+            <span class="visual-sub" data-i18n="feat2_vis_sub">Pin-drop stories across the city.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rainbow-bar"></div>
+
+  <!-- ==================== LAB / ACCORDION ==================== -->
+  <section class="section lab-section" id="lab">
+    <div class="container">
+      <div class="lab-header reveal">
+        <div class="lab-logo">⚙️ Sinequanon Labs</div>
+        <h2 class="section-title" data-i18n="lab_title">The innovation engine<br />behind LORY</h2>
+        <p class="section-sub" style="margin:0 auto" data-i18n="lab_sub">Built by AI researchers who actually like people.</p>
+      </div>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span class="acc-label">
+              <span class="acc-icon">🧠</span>
+              <span data-i18n="lab_acc1_title">Agentic AI Architecture</span>
+            </span>
+            <span class="acc-arrow">▼</span>
+          </button>
+          <div class="accordion-body">
+            <p data-i18n="lab_acc1_text">LORY uses Microsoft Semantic Kernel for conversational AI agents, combining local LLM processing (Mistral-7B) for 80% of queries with Azure OpenAI for complex reasoning — keeping costs low and responses fast.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">Semantic Kernel</span>
+              <span class="tech-tag">Mistral-7B</span>
+              <span class="tech-tag">Azure OpenAI</span>
+              <span class="tech-tag">RAG</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span class="acc-label">
+              <span class="acc-icon">🌍</span>
+              <span data-i18n="lab_acc2_title">Offline-First Infrastructure</span>
+            </span>
+            <span class="acc-arrow">▼</span>
+          </button>
+          <div class="accordion-body">
+            <p data-i18n="lab_acc2_text">Vector map tiles (45 MB per city), cached audio files, and a local Hive database ensure the app works perfectly in airplane mode. OpenStreetMap data with Google Maps fallback.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">OpenStreetMap</span>
+              <span class="tech-tag">Hive DB</span>
+              <span class="tech-tag">Vector Tiles</span>
+              <span class="tech-tag">Offline-first</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <button class="accordion-header">
+            <span class="acc-label">
+              <span class="acc-icon">🔊</span>
+              <span data-i18n="lab_acc3_title">AI Voice &amp; Translation Pipeline</span>
+            </span>
+            <span class="acc-arrow">▼</span>
+          </button>
+          <div class="accordion-body">
+            <p data-i18n="lab_acc3_text">Self-hosted Coqui TTS generates natural-sounding audio in 6 languages. Opus-MT handles translations at zero API cost. Human QA on 10% of content ensures quality.</p>
+            <div class="tech-tags">
+              <span class="tech-tag">Coqui TTS</span>
+              <span class="tech-tag">Opus-MT</span>
+              <span class="tech-tag">6 Languages</span>
+              <span class="tech-tag">Human QA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rainbow-bar"></div>
+
+  <!-- ==================== WAITLIST ==================== -->
+  <section class="section waitlist-section" id="waitlist">
+    <div class="container">
+      <div class="waitlist-content reveal">
+        <h2 data-i18n="waitlist_title">Be the first to explore with LORY</h2>
+        <p data-i18n="waitlist_sub">Join travelers already waiting for the smarter way to explore.</p>
+
+        <form class="waitlist-form" id="waitlist-form">
+          <div class="form-row">
+            <input type="email" id="email" data-i18n-placeholder="waitlist_email_plh" placeholder="your@email.com" required autocomplete="email" />
+          </div>
+          <div class="form-row">
+            <input type="text" id="name" data-i18n-placeholder="waitlist_name_plh" placeholder="What should Lory call you?" autocomplete="given-name" />
+          </div>
+
+          <div class="city-pills-label" data-i18n="waitlist_cities_label" style="text-align:inherit;font-size:0.85rem;color:rgba(255,255,255,0.5);margin-bottom:4px;">
+            Pick your cities
+          </div>
+          <div class="city-pills">
+            <button type="button" class="city-pill">🇫🇷 Nice</button>
+            <button type="button" class="city-pill">🇫🇷 Paris</button>
+            <button type="button" class="city-pill">🇫🇷 Lyon</button>
+            <button type="button" class="city-pill">🇫🇷 Marseille</button>
+            <button type="button" class="city-pill">🇫🇷 Cannes</button>
+          </div>
+
+          <button type="submit" class="btn-submit" data-i18n="waitlist_btn">
+            Get Early Access <span class="arrow">→</span>
+          </button>
+
+          <label class="consent-row">
+            <input type="checkbox" id="consent" checked />
+            <span data-i18n="waitlist_consent">Keep me posted (no spam, promise).</span>
+            <a href="#" data-i18n="waitlist_privacy">Privacy Policy</a>
+          </label>
+        </form>
+
+        <div class="waitlist-success" id="waitlist-success">
+          <div class="success-icon"><img src="assets/lory-mascot.png" alt="Lory" class="success-mascot" />✨</div>
+          <h3 data-i18n="waitlist_success_title">You're in! Lory can't wait to meet you.</h3>
+          <p data-i18n="waitlist_success_text">We'll let you know the moment we launch. In the meantime, tell a friend?</p>
+          <button class="btn-share">
+            <span>📣</span> <span data-i18n="waitlist_share">Tell a friend about Lory →</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rainbow-bar"></div>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><img src="assets/lory-logo.png" alt="LORY" class="nav-logo-img" /></div>
+          <p data-i18n="footer_desc">Your AI travel buddy. Automatic audio stories, AI trip planning, and smart souvenirs — all fully offline.</p>
+          <div class="lab-credit" data-i18n="footer_lab">
+            Made by <a href="#" target="_blank">Sinequanon Labs</a> &middot; Built by AI researchers who actually like people.
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_product">Product</h4>
+          <a href="#features" data-i18n="footer_features">Features</a>
+          <a href="#lab" data-i18n="footer_lab_link">The Lab</a>
+          <a href="#waitlist" data-i18n="footer_waitlist">Waitlist</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_legal">Legal</h4>
+          <a href="#" data-i18n="footer_privacy">Privacy Policy</a>
+          <a href="#" data-i18n="footer_tos">Terms of Service</a>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_company">Company</h4>
+          <a href="#" target="_blank" data-i18n="footer_labs">Sinequanon Labs</a>
+          <a href="#" data-i18n="footer_contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span data-i18n="footer_copy">&copy; 2026 Sinequanon Labs. All rights reserved. &middot; &copy; OpenStreetMap contributors</span>
+        <div class="social-links">
+          <a href="#" target="_blank" aria-label="Instagram">Instagram</a>
+          <a href="#" target="_blank" aria-label="TikTok">TikTok</a>
+          <a href="#" target="_blank" aria-label="Twitter">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+# LORY Landing Page — OVH Hosting Configuration
+# Apache config for personal web hosting
+
+# Compress text files
+AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript text/plain text/xml
+
+# Cache static assets
+<FilesMatch "\.(css|js|woff2|png|jpg|webp|svg|glb|gltf)$">
+  Header set Cache-Control "max-age=31536000, immutable"
+</FilesMatch>
+
+# Cache HTML
+<FilesMatch "\.(html)$">
+  Header set Cache-Control "max-age=0, must-revalidate"
+</FilesMatch>
+
+# Security headers
+Header set X-Content-Type-Options "nosniff"
+Header set X-Frame-Options "DENY"
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+
+# Redirect www to non-www
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Custom 404
+ErrorDocument 404 /404.html
