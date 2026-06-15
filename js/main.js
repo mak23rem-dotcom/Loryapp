@@ -181,7 +181,7 @@
 
       try {
         try {
-          await fetch('https://script.google.com/macros/s/AKfycbzhmtpclFIKEG7EIJkrbKpCeXc3Das78v9qRm4HWwkaGUTRcHb8Rt9c4SevqmMETTOP4A/exec', {
+          await fetch('https://script.google.com/macros/s/AKfycbzhzBUPQsCVjCOH0-OEPSCblijumF4Mqh76iE4x6IBnKWuewfGfgA4p-eHGc45VN-B01Q/exec', {
             method: 'POST', mode: 'no-cors',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email, name: name || '(not provided)', cities: activeCities.join(', '), source: 'lory-landing-page', timestamp: new Date().toISOString() }),
