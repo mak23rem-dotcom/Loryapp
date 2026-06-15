@@ -181,10 +181,14 @@
 
       try {
         try {
+          const params = new URLSearchParams();
+          params.append('email', email);
+          params.append('name', name || '(not provided)');
+          params.append('cities', activeCities.join(', '));
+          params.append('source', 'lory-landing-page');
           await fetch('https://script.google.com/macros/s/AKfycbzhzBUPQsCVjCOH0-OEPSCblijumF4Mqh76iE4x6IBnKWuewfGfgA4p-eHGc45VN-B01Q/exec', {
             method: 'POST', mode: 'no-cors',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ email, name: name || '(not provided)', cities: activeCities.join(', '), source: 'lory-landing-page', timestamp: new Date().toISOString() }),
+            body: params,
           });
         } catch (_) {}
 
