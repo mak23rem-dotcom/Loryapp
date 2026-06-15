@@ -180,15 +180,11 @@
       btn.disabled = true;
 
       try {
-        const params = new URLSearchParams();
-        params.append('email', email);
-        params.append('name', name || '(not provided)');
-        params.append('cities', activeCities.join(', '));
-        params.append('source', 'lory-landing-page');
         await fetch('https://script.google.com/macros/s/AKfycbxv7w6ElnC1LEW-7XAJj_RZE4OoaDBW7_O_R5sajNXivI50BgyNvdRYs4W1HjLz-Qi4/exec', {
-          method: 'POST', body: params,
+          method: 'POST',
+          headers: { 'Content-Type': 'text/plain' },
+          body: JSON.stringify({ email, name: name || '(not provided)', cities: activeCities.join(', '), source: 'lory-landing-page' }),
         });
-
         createConfetti();
         form.style.display = 'none';
         success.classList.add('show');
