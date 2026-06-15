@@ -186,8 +186,7 @@
         params.append('cities', activeCities.join(', '));
         params.append('source', 'lory-landing-page');
         await fetch('https://script.google.com/macros/s/AKfycbxv7w6ElnC1LEW-7XAJj_RZE4OoaDBW7_O_R5sajNXivI50BgyNvdRYs4W1HjLz-Qi4/exec', {
-          method: 'POST', mode: 'no-cors',
-          body: params,
+          method: 'POST', body: params,
         });
 
         createConfetti();
