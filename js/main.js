@@ -180,22 +180,21 @@
       btn.disabled = true;
 
       try {
-        try {
-          const params = new URLSearchParams();
-          params.append('email', email);
-          params.append('name', name || '(not provided)');
-          params.append('cities', activeCities.join(', '));
-          params.append('source', 'lory-landing-page');
-          await fetch('https://script.google.com/macros/s/AKfycbw6b_pepiNlyQ9e7WP0KZOp-D7uGZgp38l3U6cysg2pLORSpqvRSUZiedIO4VXNQWGgWQ/exec', {
-            method: 'POST', mode: 'no-cors',
-            body: params,
-          });
-        } catch (_) {}
+        const params = new URLSearchParams();
+        params.append('email', email);
+        params.append('name', name || '(not provided)');
+        params.append('cities', activeCities.join(', '));
+        params.append('source', 'lory-landing-page');
+        await fetch('https://script.google.com/macros/s/AKfycbxv7w6ElnC1LEW-7XAJj_RZE4OoaDBW7_O_R5sajNXivI50BgyNvdRYs4W1HjLz-Qi4/exec', {
+          method: 'POST', mode: 'no-cors',
+          body: params,
+        });
 
         createConfetti();
         form.style.display = 'none';
         success.classList.add('show');
-      } catch (_) {
+      } catch (err) {
+        console.error('Form submit error:', err);
         btn.innerHTML = LORY_I18N[currentLang]?.waitlist_btn || 'Get Early Access <span class="arrow">→</span>';
         btn.disabled = false;
       }
