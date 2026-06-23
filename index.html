@@ -249,6 +249,40 @@
       0%   { opacity: 0; transform: scale(0.5); }
       100% { opacity: var(--op); transform: scale(1); }
     }
+
+    /* Language switcher */
+    .cs-lang-switcher {
+      display: flex;
+      gap: 3px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 9999px;
+      padding: 3px;
+      margin-bottom: 24px;
+      justify-content: center;
+    }
+    .cs-lang-btn {
+      padding: 5px 12px;
+      border-radius: 50px;
+      border: none;
+      background: transparent;
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.35);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      letter-spacing: 0.02em;
+    }
+    .cs-lang-btn:hover { color: rgba(255,255,255,0.7); }
+    .cs-lang-btn.active {
+      background: rgba(255,255,255,0.1);
+      color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    /* RTL overrides */
+    [dir="rtl"] .cs-form { text-align: right; }
+    [dir="rtl"] .cs-field input { text-align: right; }
   </style>
 </head>
 <body>
@@ -263,26 +297,32 @@
   <div class="cs-card">
     <img src="assets/lory-logo.png" alt="LORY" class="cs-logo" />
 
-    <div class="cs-badge">
-      <span class="pulse-dot"></span>
-      Coming Soon
+    <div class="cs-lang-switcher">
+      <button class="cs-lang-btn active" data-lang="en" aria-label="English">EN</button>
+      <button class="cs-lang-btn" data-lang="fr" aria-label="Français">FR</button>
+      <button class="cs-lang-btn" data-lang="ar" aria-label="العربية">AR</button>
     </div>
 
-    <h1 class="cs-title">Something amazing is flying your way</h1>
-    <p class="cs-sub">LORY — your AI travel buddy. We're putting the finishing touches. Almost there.</p>
+    <div class="cs-badge">
+      <span class="pulse-dot"></span>
+      <span data-i18n="cs_badge">Coming Soon</span>
+    </div>
+
+    <h1 class="cs-title" data-i18n="cs_title">Something amazing is flying your way</h1>
+    <p class="cs-sub" data-i18n="cs_sub">LORY — your AI travel buddy. We're putting the finishing touches. Almost there.</p>
 
     <form class="cs-form" id="cs-form" autocomplete="off">
       <div class="cs-field">
-        <label for="cs-user">Staff Access</label>
-        <input type="text" id="cs-user" placeholder="Username" autocomplete="off" required />
+        <label for="cs-user" data-i18n="cs_label_user">Staff Access</label>
+        <input type="text" id="cs-user" data-i18n-placeholder="cs_plh_user" placeholder="Username" autocomplete="off" required />
       </div>
       <div class="cs-field">
-        <label for="cs-pass">Password</label>
-        <input type="password" id="cs-pass" placeholder="Password" autocomplete="off" required />
+        <label for="cs-pass" data-i18n="cs_label_pass">Password</label>
+        <input type="password" id="cs-pass" data-i18n-placeholder="cs_plh_pass" placeholder="Password" autocomplete="off" required />
       </div>
       <div class="cs-error" id="cs-error"></div>
       <button type="submit" class="cs-btn cs-btn-primary">
-        Take me to LORYapp <span style="font-size:1.1em;">→</span>
+        <span data-i18n="cs_btn">Take me to LORYapp</span> <span style="font-size:1.1em;">→</span>
       </button>
     </form>
 
@@ -290,10 +330,11 @@
   </div>
 
   <div class="cs-footer">
-    Made by <a href="#">Sinequanon Labs</a> &middot; &copy; 2026
+    <span data-i18n="cs_footer">Made by <a href="#">Sinequanon Labs</a> &middot; &copy; 2026</span>
   </div>
 
   <script src="js/auth.js"></script>
+  <script src="js/i18n.js"></script>
   <script>
     (function () {
       // If already authenticated, skip straight to the landing page
@@ -302,10 +343,74 @@
         return;
       }
 
-      // Generate star particles
-      const stars = document.getElementById('cs-stars');
-      for (let i = 0; i < 60; i++) {
-        const s = document.createElement('div');
+      // ==================== i18n Engine (Coming Soon) ====================
+      var DEFAULT_LANG = 'en';
+      var SUPPORTED_LANGS = ['en', 'fr', 'ar'];
+
+      function getSavedLang() {
+        try {
+          var saved = localStorage.getItem('lory_lang');
+          if (saved && SUPPORTED_LANGS.indexOf(saved) !== -1) return saved;
+        } catch (_) {}
+        var navLang = (navigator.language || (navigator.languages && navigator.languages[0]) || '').slice(0, 2);
+        if (navLang === 'ar') return 'ar';
+        if (navLang === 'fr') return 'fr';
+        return 'en';
+      }
+
+      var currentLang = getSavedLang();
+
+      function applyLanguage(lang) {
+        if (!LORY_I18N[lang]) return;
+        currentLang = lang;
+        try { localStorage.setItem('lory_lang', lang); } catch (_) {}
+
+        var html = document.documentElement;
+        html.setAttribute('lang', lang);
+        html.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
+
+        document.querySelectorAll('[data-i18n]').forEach(function (el) {
+          var key = el.getAttribute('data-i18n');
+          var t = LORY_I18N[lang][key];
+          if (t !== undefined) el.innerHTML = t;
+        });
+
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(function (el) {
+          var key = el.getAttribute('data-i18n-placeholder');
+          var t = LORY_I18N[lang][key];
+          if (t !== undefined) el.setAttribute('placeholder', t);
+        });
+
+        document.querySelectorAll('.cs-lang-btn').forEach(function (btn) {
+          btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
+        });
+      }
+
+      document.addEventListener('click', function (e) {
+        var btn = e.target.closest('.cs-lang-btn');
+        if (btn) {
+          var lang = btn.getAttribute('data-lang');
+          if (lang && lang !== currentLang) {
+            applyLanguage(lang);
+            updateErrorTranslations();
+          }
+        }
+      });
+
+      applyLanguage(currentLang);
+
+      // Store translated error messages for form validation
+      var errorMessages = { empty: '', invalid: '' };
+      function updateErrorTranslations() {
+        errorMessages.empty  = LORY_I18N[currentLang]?.cs_error_empty  || 'Please enter both fields.';
+        errorMessages.invalid = LORY_I18N[currentLang]?.cs_error_invalid || 'Invalid credentials. Access denied.';
+      }
+      updateErrorTranslations();
+
+      // ==================== Star Particles ====================
+      var stars = document.getElementById('cs-stars');
+      for (var i = 0; i < 60; i++) {
+        var s = document.createElement('div');
         s.className = 'cs-star';
         s.style.left = Math.random() * 100 + '%';
         s.style.top  = Math.random() * 100 + '%';
@@ -315,30 +420,29 @@
         stars.appendChild(s);
       }
 
-      // Form handling
-      const form  = document.getElementById('cs-form');
-      const error = document.getElementById('cs-error');
+      // ==================== Form Handling ====================
+      var form  = document.getElementById('cs-form');
+      var error = document.getElementById('cs-error');
 
       form.addEventListener('submit', function (e) {
         e.preventDefault();
         error.textContent = '';
 
-        const user = document.getElementById('cs-user').value.trim();
-        const pass = document.getElementById('cs-pass').value;
+        var user = document.getElementById('cs-user').value.trim();
+        var pass = document.getElementById('cs-pass').value;
 
         if (!user || !pass) {
-          error.textContent = 'Please enter both fields.';
+          error.textContent = errorMessages.empty;
           return;
         }
 
         if (LORY_AUTH.login(user, pass)) {
           window.location.href = 'lory.html';
         } else {
-          error.textContent = 'Invalid credentials. Access denied.';
+          error.textContent = errorMessages.invalid;
           document.getElementById('cs-pass').value = '';
           document.getElementById('cs-pass').focus();
-          // Shake the card
-          const card = document.querySelector('.cs-card');
+          var card = document.querySelector('.cs-card');
           card.style.animation = 'shake 0.4s ease';
           setTimeout(function () { card.style.animation = ''; }, 500);
         }

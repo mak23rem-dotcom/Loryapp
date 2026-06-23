@@ -98,6 +98,19 @@ const LORY_I18N = {
 
     // Share
     share_text: 'Meet Lory — your AI travel guide that works offline 🦜 Join the waitlist:',
+
+    // Coming Soon
+    cs_title: 'Something amazing is flying your way',
+    cs_sub: 'LORY — your AI travel buddy. We\'re putting the finishing touches. Almost there.',
+    cs_badge: 'Coming Soon',
+    cs_label_user: 'Staff Access',
+    cs_label_pass: 'Password',
+    cs_plh_user: 'Username',
+    cs_plh_pass: 'Password',
+    cs_btn: 'Take me to LORYapp',
+    cs_error_empty: 'Please enter both fields.',
+    cs_error_invalid: 'Invalid credentials. Access denied.',
+    cs_footer: 'Made by <a href="#">Sinequanon Labs</a> &middot; &copy; 2026',
   },
 
   fr: {
@@ -183,6 +196,19 @@ const LORY_I18N = {
     footer_copy: '© 2026 Sinequanon Labs. Tous droits réservés. · © Contributeurs OpenStreetMap',
 
     share_text: 'Découvre Lory — ton guide de voyage IA qui fonctionne hors-ligne 🦜 Rejoins la liste :',
+
+    // Coming Soon
+    cs_title: 'Quelque chose d\'incroyable est en chemin',
+    cs_sub: 'LORY — ton compagnon de voyage IA. On finalise les derniers détails. Presque prêt.',
+    cs_badge: 'Bientôt disponible',
+    cs_label_user: 'Accès Équipe',
+    cs_label_pass: 'Mot de passe',
+    cs_plh_user: 'Nom d\'utilisateur',
+    cs_plh_pass: 'Mot de passe',
+    cs_btn: 'Emmène-moi sur LORYapp',
+    cs_error_empty: 'Veuillez remplir les deux champs.',
+    cs_error_invalid: 'Identifiants incorrects. Accès refusé.',
+    cs_footer: 'Créé par <a href="#">Sinequanon Labs</a> &middot; &copy; 2026',
   },
 
   ar: {
@@ -268,5 +294,18 @@ const LORY_I18N = {
     footer_copy: '© 2026 مختبرات Sinequanon. جميع الحقوق محفوظة. · © مساهمو OpenStreetMap',
 
     share_text: 'تعرف على لوري — دليل سفرك بالذكاء الاصطناعي الذي يعمل بدون إنترنت 🦜 انضم للقائمة:',
+
+    // Coming Soon
+    cs_title: 'شيء مذهل في طريقه إليك',
+    cs_sub: 'لوري — رفيق سفرك بالذكاء الاصطناعي. نحن نضع اللمسات الأخيرة. على وشك الانتهاء.',
+    cs_badge: 'قريباً',
+    cs_label_user: 'دخول الفريق',
+    cs_label_pass: 'كلمة المرور',
+    cs_plh_user: 'اسم المستخدم',
+    cs_plh_pass: 'كلمة المرور',
+    cs_btn: 'خذني إلى LORYapp',
+    cs_error_empty: 'يرجى ملء الحقلين.',
+    cs_error_invalid: 'بيانات الدخول غير صحيحة. تم رفض الوصول.',
+    cs_footer: 'صنع بواسطة <a href="#">Sinequanon Labs</a> &middot; &copy; 2026',
   }
 };
