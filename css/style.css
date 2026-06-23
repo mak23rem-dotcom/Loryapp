@@ -1091,6 +1091,25 @@ ul { list-style: none; }
 
 [dir="rtl"] .btn-primary:hover .arrow { transform: rotate(180deg) translateX(-4px); }
 
+/* ---------- Logout Button ---------- */
+.nav-logout {
+  padding: 6px 14px;
+  border-radius: var(--btn-radius);
+  border: 1.5px solid rgba(15,23,42,0.1);
+  background: transparent;
+  color: var(--text-light);
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.nav-logout:hover {
+  color: var(--cheeky-red);
+  border-color: var(--cheeky-red);
+  background: rgba(217,3,104,0.04);
+}
+
 /* ---------- Responsive ---------- */
 @media (max-width: 1024px) {
   .hero .container {
@@ -1131,6 +1150,7 @@ ul { list-style: none; }
   .navbar.scrolled { padding: 10px 20px; }
 
   .navbar .nav-links a:not(.nav-cta):not(.lang-btn) { display: none; }
+  .nav-logout { display: none; }
 
   .philosophy-grid { grid-template-columns: 1fr; gap: 16px; }
 
