@@ -7,12 +7,12 @@
 const LORY_I18N = {
   en: {
     // Meta
-    meta_title: 'LORY — Your AI Travel Guide. Works Offline.',
-    meta_desc: 'Meet LORY — the AI travel guide that works offline. Automatic audio stories as you walk. Plan trips by chatting. Join the waitlist.',
-    og_title: 'LORY — Your AI Travel Guide. Works Offline.',
-    og_desc: 'The only travel app with offline audio guides, AI trip planning, and smart souvenirs.',
+    meta_title: 'LORY — Your AI Travel Guide.',
+    meta_desc: 'Meet LORY — the AI travel guide. Automatic audio stories as you walk. Plan trips by chatting. Join the waitlist.',
+    og_title: 'LORY — Your AI Travel Guide.',
+    og_desc: 'The only travel app with audio guides, AI trip planning, and smart souvenirs.',
     tw_title: 'LORY — Your AI Travel Guide',
-    tw_desc: 'AI travel guide that works offline. Join the waitlist.',
+    tw_desc: 'AI travel guide. Join the waitlist.',
 
     // Nav
     nav_philosophy: 'Philosophy',
@@ -22,8 +22,8 @@ const LORY_I18N = {
 
     // Hero
     hero_badge: 'LORYapp.ai — Official Guidelines',
-    hero_h1: 'Your <span class="gradient-text">AI Travel Guide</span><br />That Works <span class="gradient-text">Offline</span>',
-    hero_sub: 'Automatic audio stories as you walk. Plan trips by chatting with AI. All fully offline — no roaming, no data stress.',
+    hero_h1: 'Your <span class="gradient-text">AI Travel Guide</span>',
+    hero_sub: 'Automatic audio stories as you walk. Plan trips by chatting with AI. No roaming, no data stress.',
     hero_btn: 'Join the Waitlist',
 
     // Philosophy
@@ -50,9 +50,9 @@ const LORY_I18N = {
     // Feature 2: Smart Retrieval
     feat2_tag: 'Smart Retrieval',
     feat2_title: 'Audio stories that<br />find you automatically',
-    feat2_text: 'GPS-powered proximity triggers start narration as you approach any point of interest. Download once, listen offline — no signal required.',
+    feat2_text: 'GPS-powered proximity triggers start narration as you approach any point of interest. Download once, listen anywhere — no signal required.',
     feat2_list1: 'Automatic detection within 50m of any POI',
-    feat2_list2: 'Full offline mode — maps and audio cached',
+    feat2_list2: 'Downloadable maps and audio for areas with poor connectivity',
     feat2_list3: '60-second immersive narratives per location',
     feat2_vis_label: 'Smart Audio Map',
     feat2_vis_sub: 'Pin-drop stories across the city.',
@@ -62,8 +62,8 @@ const LORY_I18N = {
     lab_sub: 'Built by AI researchers who actually like people.',
     lab_acc1_title: 'Smart AI at the Core',
     lab_acc1_text: 'A hybrid AI system that balances speed and intelligence — most queries are handled instantly on-device, while complex questions tap into advanced cloud reasoning for the best of both worlds.',
-    lab_acc2_title: 'Built for Offline',
-    lab_acc2_text: 'Lightweight vector maps, cached audio, and a local database keep everything running smoothly — even in airplane mode. No signal? No problem.',
+    lab_acc2_title: 'Smart Connectivity',
+    lab_acc2_text: 'Lightweight vector maps, cached audio, and a local database keep things running smoothly — even with weak or no signal.',
     lab_acc3_title: 'Multilingual by Design',
     lab_acc3_text: 'Natural-sounding voices in multiple languages, powered by self-hosted AI. Every translation is reviewed by humans to keep quality high.',
 
@@ -97,11 +97,11 @@ const LORY_I18N = {
     footer_copy: '© 2026 Sinequanon Labs. All rights reserved. · © OpenStreetMap contributors',
 
     // Share
-    share_text: 'Meet Lory — your AI travel guide that works offline 🦜 Join the waitlist:',
+    share_text: 'Meet Lory — your AI travel guide 🦜 Join the waitlist:',
 
     // Coming Soon
     cs_meta_title: 'LORY — Coming Soon',
-    cs_meta_desc: 'LORY — AI travel audio guide that works offline. Coming soon.',
+    cs_meta_desc: 'LORY — AI travel audio guide. Coming soon.',
     cs_title: 'Something amazing is flying your way',
     cs_sub: 'LORY — your AI travel buddy. We\'re putting the finishing touches. Almost there.',
     cs_badge: 'Coming Soon',
@@ -116,12 +116,12 @@ const LORY_I18N = {
   },
 
   fr: {
-    meta_title: 'LORY — Votre Guide de Voyage IA. Hors-ligne.',
-    meta_desc: 'Découvrez LORY — le guide de voyage IA qui fonctionne hors-ligne. Histoires audio automatiques, planification par chat. Rejoignez la liste.',
+    meta_title: 'LORY — Votre Guide de Voyage IA.',
+    meta_desc: 'Découvrez LORY — le guide de voyage IA. Histoires audio automatiques, planification par chat. Rejoignez la liste.',
     og_title: 'LORY — Votre Guide de Voyage IA',
-    og_desc: 'La seule appli de voyage avec guides audio hors-ligne, planification IA et souvenirs intelligents.',
+    og_desc: 'La seule appli de voyage avec guides audio, planification IA et souvenirs intelligents.',
     tw_title: 'LORY — Votre Guide de Voyage IA',
-    tw_desc: 'Guide de voyage IA hors-ligne. Rejoignez la liste.',
+    tw_desc: 'Guide de voyage IA. Rejoignez la liste.',
 
     nav_philosophy: 'Philosophie',
     nav_features: 'Fonctionnalités',
@@ -129,8 +129,8 @@ const LORY_I18N = {
     nav_cta: 'Rejoindre la liste',
 
     hero_badge: 'LORYapp.ai — Guide Officiel',
-    hero_h1: 'Votre <span class="gradient-text">Guide de Voyage IA</span><br />Qui Fonctionne <span class="gradient-text">Hors-ligne</span>',
-    hero_sub: 'Histoires audio automatiques en marchant. Planifiez vos voyages en discutant avec l\'IA. 100% hors-ligne — sans roaming, sans stress.',
+    hero_h1: 'Votre <span class="gradient-text">Guide de Voyage IA</span>',
+    hero_sub: 'Histoires audio automatiques en marchant. Planifiez vos voyages en discutant avec l\'IA. Sans roaming, sans stress.',
     hero_btn: 'Rejoindre la liste',
 
     phil_label: 'Philosophie',
@@ -154,9 +154,9 @@ const LORY_I18N = {
 
     feat2_tag: 'Récupération Intelligente',
     feat2_title: 'Des histoires audio qui<br />vous trouvent automatiquement',
-    feat2_text: 'Déclencheurs de proximité GPS lancent la narration quand vous approchez d\'un point d\'intérêt. Téléchargez une fois, écoutez hors-ligne.',
+    feat2_text: 'Déclencheurs de proximité GPS lancent la narration quand vous approchez d\'un point d\'intérêt. Téléchargez une fois, écoutez partout — pas besoin de signal.',
     feat2_list1: 'Détection automatique à 50m d\'un point d\'intérêt',
-    feat2_list2: 'Mode hors-ligne complet — cartes et audio en cache',
+    feat2_list2: 'Cartes et audio téléchargeables pour les zones à faible connectivité',
     feat2_list3: 'Récits immersifs de 60 secondes par lieu',
     feat2_vis_label: 'Carte Audio Intelligente',
     feat2_vis_sub: 'Des histoires à chaque coin de rue.',
@@ -165,8 +165,8 @@ const LORY_I18N = {
     lab_sub: 'Construit par des chercheurs en IA qui aiment vraiment les gens.',
     lab_acc1_title: 'IA Intelligente au Cœur',
     lab_acc1_text: 'Un système hybride qui équilibre vitesse et intelligence — la plupart des requêtes sont traitées instantanément sur l\'appareil, tandis que les questions complexes mobilisent un raisonnement cloud avancé.',
-    lab_acc2_title: 'Conçu pour le Hors-ligne',
-    lab_acc2_text: 'Des cartes légères, de l\'audio mis en cache et une base de données locale garantissent un fonctionnement fluide — même en mode avion. Pas de signal ? Pas de problème.',
+    lab_acc2_title: 'Connectivité Intelligente',
+    lab_acc2_text: 'Des cartes légères, de l\'audio mis en cache et une base de données locale garantissent un fonctionnement fluide — même avec un signal faible ou absent.',
     lab_acc3_title: 'Multilingue par Design',
     lab_acc3_text: 'Des voix naturelles en plusieurs langues, propulsées par de l\'IA auto-hébergée. Chaque traduction est revue par des humains pour garantir la qualité.',
 
@@ -197,11 +197,11 @@ const LORY_I18N = {
     footer_contact: 'Contact',
     footer_copy: '© 2026 Sinequanon Labs. Tous droits réservés. · © Contributeurs OpenStreetMap',
 
-    share_text: 'Découvre Lory — ton guide de voyage IA qui fonctionne hors-ligne 🦜 Rejoins la liste :',
+    share_text: 'Découvre Lory — ton guide de voyage IA 🦜 Rejoins la liste :',
 
     // Coming Soon
     cs_meta_title: 'LORY — Bientôt disponible',
-    cs_meta_desc: 'LORY — guide de voyage IA qui fonctionne hors-ligne. Bientôt disponible.',
+    cs_meta_desc: 'LORY — guide de voyage IA. Bientôt disponible.',
     cs_title: 'Quelque chose d\'incroyable est en chemin',
     cs_sub: 'LORY — ton compagnon de voyage IA. On finalise les derniers détails. Presque prêt.',
     cs_badge: 'Bientôt disponible',
@@ -216,12 +216,12 @@ const LORY_I18N = {
   },
 
   ar: {
-    meta_title: 'لوري — دليل سفرك بالذكاء الاصطناعي. يعمل بدون إنترنت.',
-    meta_desc: 'تعرف على لوري — دليل السفر بالذكاء الاصطناعي الذي يعمل بدون إنترنت. قصص صوتية تلقائية، تخطيط بالمحادثة. انضم للقائمة.',
+    meta_title: 'لوري — دليل سفرك بالذكاء الاصطناعي.',
+    meta_desc: 'تعرف على لوري — دليل السفر بالذكاء الاصطناعي. قصص صوتية تلقائية، تخطيط بالمحادثة. انضم للقائمة.',
     og_title: 'لوري — دليل سفرك بالذكاء الاصطناعي',
-    og_desc: 'تطبيق السفر الوحيد مع أدلة صوتية بدون إنترنت، تخطيط بالذكاء الاصطناعي وتذكارات ذكية.',
+    og_desc: 'تطبيق السفر الوحيد مع أدلة صوتية، تخطيط بالذكاء الاصطناعي وتذكارات ذكية.',
     tw_title: 'لوري — دليل سفرك بالذكاء الاصطناعي',
-    tw_desc: 'دليل سفر بالذكاء الاصطناعي يعمل بدون إنترنت. انضم للقائمة.',
+    tw_desc: 'دليل سفر بالذكاء الاصطناعي. انضم للقائمة.',
 
     nav_philosophy: 'الفلسفة',
     nav_features: 'الميزات',
@@ -229,8 +229,8 @@ const LORY_I18N = {
     nav_cta: 'انضم للقائمة',
 
     hero_badge: 'LORYapp.ai — الدليل الرسمي',
-    hero_h1: '<span class="gradient-text">دليل سفرك بالذكاء الاصطناعي</span><br />الذي يعمل <span class="gradient-text">بدون إنترنت</span>',
-    hero_sub: 'قصص صوتية تلقائية وأنت تمشي. خطط لرحلاتك بالمحادثة مع الذكاء الاصطناعي. كل هذا بدون إنترنت — لا تجوال ولا ضغط.',
+    hero_h1: '<span class="gradient-text">دليل سفرك بالذكاء الاصطناعي</span>',
+    hero_sub: 'قصص صوتية تلقائية وأنت تمشي. خطط لرحلاتك بالمحادثة مع الذكاء الاصطناعي. لا تجوال ولا ضغط.',
     hero_btn: 'انضم للقائمة',
 
     phil_label: 'الفلسفة الأساسية',
@@ -254,9 +254,9 @@ const LORY_I18N = {
 
     feat2_tag: 'استرجاع ذكي',
     feat2_title: 'قصص صوتية<br />تجدك تلقائياً',
-    feat2_text: 'مشغلات القرب عبر GPS تبدأ السرد عندما تقترب من أي نقطة اهتمام. حمّل مرة واحدة، استمع بدون إنترنت — لا حاجة لإشارة.',
+    feat2_text: 'مشغلات القرب عبر GPS تبدأ السرد عندما تقترب من أي نقطة اهتمام. حمّل مرة واحدة، استمع في أي مكان — لا حاجة لإشارة.',
     feat2_list1: 'كشف تلقائي ضمن 50 متراً من أي نقطة اهتمام',
-    feat2_list2: 'وضع عدم اتصال كامل — خرائط وصوت مخزنين محلياً',
+    feat2_list2: 'خرائط وصوت قابل للتحميل لمناطق الاتصال الضعيف',
     feat2_list3: 'سرد غامر لمدة 60 ثانية لكل موقع',
     feat2_vis_label: 'خريطة صوتية ذكية',
     feat2_vis_sub: 'قصص موزعة عبر المدينة.',
@@ -265,8 +265,8 @@ const LORY_I18N = {
     lab_sub: 'بناه باحثو ذكاء اصطناعي يحبون الناس حقاً.',
     lab_acc1_title: 'ذكاء اصطناعي ذكي في النواة',
     lab_acc1_text: 'نظام هجري يوازن بين السرعة والذكاء — معظم الاستعلامات تُعالج فوراً على الجهاز، بينما الأسئلة المعقدة تستفيد من استدلال سحابي متقدم.',
-    lab_acc2_title: 'صُمم للعمل بدون إنترنت',
-    lab_acc2_text: 'خرائط خفيفة وصوت مخزون وقاعدة بيانات محلية تضمن سلاسة التشغيل — حتى في وضع الطيران. لا إشارة؟ لا مشكلة.',
+    lab_acc2_title: 'اتصال ذكي',
+    lab_acc2_text: 'خرائط خفيفة وصوت مخزون وقاعدة بيانات محلية تضمن سلاسة التشغيل — حتى مع إشارة ضعيفة أو معدومة.',
     lab_acc3_title: 'تعدد اللغات بالتصميم',
     lab_acc3_text: 'أصوات طبيعية بعدة لغات، بقوة ذكاء اصطناعي مستضاف ذاتياً. كل ترجمة تتم مراجعتها من قبل البشر لضمان الجودة.',
 
@@ -297,11 +297,11 @@ const LORY_I18N = {
     footer_contact: 'اتصل بنا',
     footer_copy: '© 2026 مختبرات Sinequanon. جميع الحقوق محفوظة. · © مساهمو OpenStreetMap',
 
-    share_text: 'تعرف على لوري — دليل سفرك بالذكاء الاصطناعي الذي يعمل بدون إنترنت 🦜 انضم للقائمة:',
+    share_text: 'تعرف على لوري — دليل سفرك بالذكاء الاصطناعي 🦜 انضم للقائمة:',
 
     // Coming Soon
     cs_meta_title: 'لوري — قريباً',
-    cs_meta_desc: 'لوري — دليل سفر بالذكاء الاصطناعي يعمل بدون إنترنت. قريباً.',
+    cs_meta_desc: 'لوري — دليل سفر بالذكاء الاصطناعي. قريباً.',
     cs_title: 'شيء مذهل في طريقه إليك',
     cs_sub: 'لوري — رفيق سفرك بالذكاء الاصطناعي. نحن نضع اللمسات الأخيرة. على وشك الانتهاء.',
     cs_badge: 'قريباً',
