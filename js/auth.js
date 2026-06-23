@@ -11,8 +11,12 @@ const LORY_AUTH = (() => {
 
   // Staff credentials (add more entries as needed)
   const STAFF = [
-    { user: 'makrem', pass: 'lory2026!' },
-    { user: 'admin',  pass: 'lory@staff' },
+    { user: 'makrem',     pass: 'lory2026!' },
+    { user: 'admin',      pass: 'lory@staff' },
+    { user: 'Dev',        pass: 'Dev@lory2026' },
+    { user: 'marketing',  pass: 'Marketing@lory2026' },
+    { user: 'Sinequanon', pass: 'Sinequanon@lory2026' },
+    { user: 'testing',    pass: 'Testing@lory2026' },
   ];
 
   function isAuthed() {

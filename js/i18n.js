@@ -43,7 +43,7 @@ const LORY_I18N = {
     feat1_text: 'LORY uses agentic AI to answer follow-up questions on the fly. Ask "Who built this?" or "What\'s good to eat nearby?" — and get instant, context-aware answers.',
     feat1_list1: 'Conversational follow-ups in real time',
     feat1_list2: 'Context-aware responses based on your location',
-    feat1_list3: 'Multilingual support — FR, EN, ES, IT, AR, ZH',
+    feat1_list3: 'Multilingual support — FR, EN, AR',
     feat1_vis_label: 'Agentic AI Chat',
     feat1_vis_sub: 'Ask anything. Lory answers instantly.',
 
@@ -148,7 +148,7 @@ const LORY_I18N = {
     feat1_text: 'LORY utilise l\'IA agentique pour répondre à vos questions à la volée. Demandez "Qui a construit ça ?" ou "Où manger près d\'ici ?" — obtenez des réponses instantanées.',
     feat1_list1: 'Questions de suivi en temps réel',
     feat1_list2: 'Réponses contextuelles selon votre position',
-    feat1_list3: 'Support multilingue — FR, EN, ES, IT, AR, ZH',
+    feat1_list3: 'Support multilingue — FR, EN, AR',
     feat1_vis_label: 'Chat IA Agentique',
     feat1_vis_sub: 'Demandez tout. Lory répond instantanément.',
 
@@ -248,7 +248,7 @@ const LORY_I18N = {
     feat1_text: 'يستخدم لوري الذكاء الاصطناعي الوكيل للإجابة على أسئلتك فوراً. اسأل "من بنى هذا؟" أو "أين آكل بالقرب من هنا؟" — واحصل على إجابات فورية.',
     feat1_list1: 'متابعة محادثات في الوقت الفعلي',
     feat1_list2: 'إجابات مدركة للسياق بناءً على موقعك',
-    feat1_list3: 'دعم متعدد اللغات — العربية، الإنجليزية، الفرنسية، الإسبانية، الإيطالية، الصينية',
+    feat1_list3: 'دعم متعدد اللغات — العربية، الإنجليزية، الفرنسية',
     feat1_vis_label: 'محادثة ذكاء اصطناعي وكيل',
     feat1_vis_sub: 'اسأل أي شيء. لوري تجيب فوراً.',
 
