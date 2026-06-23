@@ -100,6 +100,8 @@ const LORY_I18N = {
     share_text: 'Meet Lory — your AI travel guide that works offline 🦜 Join the waitlist:',
 
     // Coming Soon
+    cs_meta_title: 'LORY — Coming Soon',
+    cs_meta_desc: 'LORY — AI travel audio guide that works offline. Coming soon.',
     cs_title: 'Something amazing is flying your way',
     cs_sub: 'LORY — your AI travel buddy. We\'re putting the finishing touches. Almost there.',
     cs_badge: 'Coming Soon',
@@ -198,6 +200,8 @@ const LORY_I18N = {
     share_text: 'Découvre Lory — ton guide de voyage IA qui fonctionne hors-ligne 🦜 Rejoins la liste :',
 
     // Coming Soon
+    cs_meta_title: 'LORY — Bientôt disponible',
+    cs_meta_desc: 'LORY — guide de voyage IA qui fonctionne hors-ligne. Bientôt disponible.',
     cs_title: 'Quelque chose d\'incroyable est en chemin',
     cs_sub: 'LORY — ton compagnon de voyage IA. On finalise les derniers détails. Presque prêt.',
     cs_badge: 'Bientôt disponible',
@@ -296,6 +300,8 @@ const LORY_I18N = {
     share_text: 'تعرف على لوري — دليل سفرك بالذكاء الاصطناعي الذي يعمل بدون إنترنت 🦜 انضم للقائمة:',
 
     // Coming Soon
+    cs_meta_title: 'لوري — قريباً',
+    cs_meta_desc: 'لوري — دليل سفر بالذكاء الاصطناعي يعمل بدون إنترنت. قريباً.',
     cs_title: 'شيء مذهل في طريقه إليك',
     cs_sub: 'لوري — رفيق سفرك بالذكاء الاصطناعي. نحن نضع اللمسات الأخيرة. على وشك الانتهاء.',
     cs_badge: 'قريباً',

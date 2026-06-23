@@ -381,6 +381,19 @@
           if (t !== undefined) el.setAttribute('placeholder', t);
         });
 
+        // Update meta tags
+        var metaMap = {
+          cs_meta_title: 'title',
+          cs_meta_desc: 'description',
+        };
+        Object.entries(metaMap).forEach(function ([key, attr]) {
+          var text = LORY_I18N[lang][key];
+          if (!text) return;
+          if (key === 'cs_meta_title') { document.title = text; return; }
+          var meta = document.querySelector('meta[name="' + attr + '"]');
+          if (meta) meta.setAttribute('content', text);
+        });
+
         document.querySelectorAll('.cs-lang-btn').forEach(function (btn) {
           btn.classList.toggle('active', btn.getAttribute('data-lang') === lang);
         });
