@@ -60,12 +60,12 @@ const LORY_I18N = {
     // Lab / Accordion
     lab_title: 'The innovation engine<br />behind LORY',
     lab_sub: 'Built by AI researchers who actually like people.',
-    lab_acc1_title: 'Agentic AI Architecture',
-    lab_acc1_text: 'LORY uses Microsoft Semantic Kernel for conversational AI agents, combining local LLM processing (Mistral-7B) for 80% of queries with Azure OpenAI for complex reasoning — keeping costs low and responses fast.',
-    lab_acc2_title: 'Offline-First Infrastructure',
-    lab_acc2_text: 'Vector map tiles (45 MB per city), cached audio files, and a local Hive database ensure the app works perfectly in airplane mode. OpenStreetMap data with Google Maps fallback.',
-    lab_acc3_title: 'AI Voice & Translation Pipeline',
-    lab_acc3_text: 'Self-hosted Coqui TTS generates natural-sounding audio in 6 languages. Opus-MT handles translations at zero API cost. Human QA on 10% of content ensures quality.',
+    lab_acc1_title: 'Smart AI at the Core',
+    lab_acc1_text: 'A hybrid AI system that balances speed and intelligence — most queries are handled instantly on-device, while complex questions tap into advanced cloud reasoning for the best of both worlds.',
+    lab_acc2_title: 'Built for Offline',
+    lab_acc2_text: 'Lightweight vector maps, cached audio, and a local database keep everything running smoothly — even in airplane mode. No signal? No problem.',
+    lab_acc3_title: 'Multilingual by Design',
+    lab_acc3_text: 'Natural-sounding voices in multiple languages, powered by self-hosted AI. Every translation is reviewed by humans to keep quality high.',
 
     // Waitlist
     waitlist_title: 'Be the first to explore with LORY',
@@ -82,7 +82,7 @@ const LORY_I18N = {
     waitlist_share: 'Tell a friend about Lory →',
 
     // Footer
-    footer_desc: 'Your AI travel buddy. Automatic audio stories, AI trip planning, and smart souvenirs — all fully offline.',
+    footer_desc: 'Your AI travel buddy. Automatic audio stories, AI trip planning, and smart souvenirs.',
     footer_lab: 'Made by <a href="#" target="_blank">Sinequanon Labs</a> &middot; Built by AI researchers who actually like people.',
     footer_product: 'Product',
     footer_legal: 'Legal',
@@ -163,12 +163,12 @@ const LORY_I18N = {
 
     lab_title: 'Le moteur d\'innovation<br />derrière LORY',
     lab_sub: 'Construit par des chercheurs en IA qui aiment vraiment les gens.',
-    lab_acc1_title: 'Architecture IA Agentique',
-    lab_acc1_text: 'LORY utilise Microsoft Semantic Kernel pour ses agents conversationnels, combinant un LLM local (Mistral-7B) pour 80% des requêtes et Azure OpenAI pour le raisonnement complexe.',
-    lab_acc2_title: 'Infrastructure Hors-ligne',
-    lab_acc2_text: 'Tuiles cartographiques vectorielles (45 Mo/ville), fichiers audio en cache et base Hive locale garantissent un fonctionnement parfait en mode avion.',
-    lab_acc3_title: 'Pipeline Voix & Traduction IA',
-    lab_acc3_text: 'Coqui TTS auto-hébergé génère un son naturel en 6 langues. Opus-MT gère les traductions sans coût API. Contrôle qualité humain sur 10% du contenu.',
+    lab_acc1_title: 'IA Intelligente au Cœur',
+    lab_acc1_text: 'Un système hybride qui équilibre vitesse et intelligence — la plupart des requêtes sont traitées instantanément sur l\'appareil, tandis que les questions complexes mobilisent un raisonnement cloud avancé.',
+    lab_acc2_title: 'Conçu pour le Hors-ligne',
+    lab_acc2_text: 'Des cartes légères, de l\'audio mis en cache et une base de données locale garantissent un fonctionnement fluide — même en mode avion. Pas de signal ? Pas de problème.',
+    lab_acc3_title: 'Multilingue par Design',
+    lab_acc3_text: 'Des voix naturelles en plusieurs langues, propulsées par de l\'IA auto-hébergée. Chaque traduction est revue par des humains pour garantir la qualité.',
 
     waitlist_title: 'Sois le premier à explorer avec LORY',
     waitlist_sub: 'Rejoins les voyageurs qui attendent déjà une façon plus intelligente d\'explorer.',
@@ -183,7 +183,7 @@ const LORY_I18N = {
     waitlist_success_text: 'On te préviendra dès le lancement. En attendant, parle-en à un ami ?',
     waitlist_share: 'Parle de Lory à un ami →',
 
-    footer_desc: 'Ton compagnon de voyage IA. Histoires audio automatiques, planification IA et souvenirs intelligents — 100% hors-ligne.',
+    footer_desc: 'Ton compagnon de voyage IA. Histoires audio automatiques, planification IA et souvenirs intelligents.',
     footer_lab: 'Créé par <a href="#" target="_blank">Sinequanon Labs</a> &middot; Construit par des chercheurs en IA qui aiment vraiment les gens.',
     footer_product: 'Produit',
     footer_legal: 'Légal',
@@ -263,12 +263,12 @@ const LORY_I18N = {
 
     lab_title: 'محرك الابتكار<br />وراء لوري',
     lab_sub: 'بناه باحثو ذكاء اصطناعي يحبون الناس حقاً.',
-    lab_acc1_title: 'بنية الذكاء الاصطناعي الوكيل',
-    lab_acc1_text: 'يستخدم لوري Microsoft Semantic Kernel لوكلاء المحادثة، بدمج معالجة محلية (Mistral-7B) لـ 80% من الاستعلامات مع Azure OpenAI للاستدلال المعقد.',
-    lab_acc2_title: 'بنية تحتية تعمل بدون إنترنت',
-    lab_acc2_text: 'خرائط متجهية (45 ميغابايت لكل مدينة)، ملفات صوتية مخبأة، وقاعدة بيانات Hive محلية تضمن عمل التطبيق بشكل مثالي في وضع الطيران.',
-    lab_acc3_title: 'خط الصوت والترجمة بالذكاء الاصطناعي',
-    lab_acc3_text: 'Coqui TTS المستضاف محلياً يولد صوتاً طبيعياً بـ 6 لغات. Opus-MT يدير الترجمات بدون تكلفة API. مراجعة بشرية لـ 10% من المحتوى.',
+    lab_acc1_title: 'ذكاء اصطناعي ذكي في النواة',
+    lab_acc1_text: 'نظام هجري يوازن بين السرعة والذكاء — معظم الاستعلامات تُعالج فوراً على الجهاز، بينما الأسئلة المعقدة تستفيد من استدلال سحابي متقدم.',
+    lab_acc2_title: 'صُمم للعمل بدون إنترنت',
+    lab_acc2_text: 'خرائط خفيفة وصوت مخزون وقاعدة بيانات محلية تضمن سلاسة التشغيل — حتى في وضع الطيران. لا إشارة؟ لا مشكلة.',
+    lab_acc3_title: 'تعدد اللغات بالتصميم',
+    lab_acc3_text: 'أصوات طبيعية بعدة لغات، بقوة ذكاء اصطناعي مستضاف ذاتياً. كل ترجمة تتم مراجعتها من قبل البشر لضمان الجودة.',
 
     waitlist_title: 'كن أول من يستكشف مع لوري',
     waitlist_sub: 'انضم للمسافرين الذين ينتظرون بالفعل طريقة أذكى للاستكشاف.',
@@ -283,7 +283,7 @@ const LORY_I18N = {
     waitlist_success_text: 'سنخبرك فور إطلاق التطبيق. في هذه الأثناء، أخبر صديقاً؟',
     waitlist_share: 'أخبر صديقاً عن لوري ←',
 
-    footer_desc: 'رفيق سفرك بالذكاء الاصطناعي. قصص صوتية تلقائية، تخطيط بالذكاء الاصطناعي، وتذكارات ذكية — كل ذلك بدون إنترنت.',
+    footer_desc: 'رفيق سفرك بالذكاء الاصطناعي. قصص صوتية تلقائية، تخطيط بالذكاء الاصطناعي، وتذكارات ذكية.',
     footer_lab: 'صنع بواسطة <a href="#" target="_blank">مختبرات Sinequanon</a> &middot; بناه باحثو ذكاء اصطناعي يحبون الناس حقاً.',
     footer_product: 'المنتج',
     footer_legal: 'قانوني',
