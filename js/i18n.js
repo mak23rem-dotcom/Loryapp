@@ -50,9 +50,9 @@ const LORY_I18N = {
     // Feature 2: Smart Retrieval
     feat2_tag: 'Smart Retrieval',
     feat2_title: 'Audio stories that<br />find you automatically',
-    feat2_text: 'GPS-powered proximity triggers start narration as you approach any point of interest. Download once, listen anywhere — no signal required.',
+    feat2_text: 'GPS-powered proximity triggers start narration as you approach any point of interest. Real-time audio guidance, powered by AI.',
     feat2_list1: 'Automatic detection within 50m of any POI',
-    feat2_list2: 'Downloadable maps and audio for areas with poor connectivity',
+    feat2_list2: 'Smart streaming that adapts to your connection',
     feat2_list3: '60-second immersive narratives per location',
     feat2_vis_label: 'Smart Audio Map',
     feat2_vis_sub: 'Pin-drop stories across the city.',
@@ -63,7 +63,7 @@ const LORY_I18N = {
     lab_acc1_title: 'Smart AI at the Core',
     lab_acc1_text: 'A hybrid AI system that balances speed and intelligence — most queries are handled instantly on-device, while complex questions tap into advanced cloud reasoning for the best of both worlds.',
     lab_acc2_title: 'Smart Connectivity',
-    lab_acc2_text: 'Lightweight vector maps, cached audio, and a local database keep things running smoothly — even with weak or no signal.',
+    lab_acc2_text: 'Lightweight vector maps and smart data handling keep the experience smooth — fast loading, low data usage, even on slow connections.',
     lab_acc3_title: 'Multilingual by Design',
     lab_acc3_text: 'Natural-sounding voices in multiple languages, powered by self-hosted AI. Every translation is reviewed by humans to keep quality high.',
 
@@ -154,9 +154,9 @@ const LORY_I18N = {
 
     feat2_tag: 'Récupération Intelligente',
     feat2_title: 'Des histoires audio qui<br />vous trouvent automatiquement',
-    feat2_text: 'Déclencheurs de proximité GPS lancent la narration quand vous approchez d\'un point d\'intérêt. Téléchargez une fois, écoutez partout — pas besoin de signal.',
+    feat2_text: 'Déclencheurs de proximité GPS lancent la narration quand vous approchez d\'un point d\'intérêt. Guidance audio en temps réel, propulsée par l\'IA.',
     feat2_list1: 'Détection automatique à 50m d\'un point d\'intérêt',
-    feat2_list2: 'Cartes et audio téléchargeables pour les zones à faible connectivité',
+    feat2_list2: 'Streaming intelligent qui s\'adapte à votre connexion',
     feat2_list3: 'Récits immersifs de 60 secondes par lieu',
     feat2_vis_label: 'Carte Audio Intelligente',
     feat2_vis_sub: 'Des histoires à chaque coin de rue.',
@@ -166,7 +166,7 @@ const LORY_I18N = {
     lab_acc1_title: 'IA Intelligente au Cœur',
     lab_acc1_text: 'Un système hybride qui équilibre vitesse et intelligence — la plupart des requêtes sont traitées instantanément sur l\'appareil, tandis que les questions complexes mobilisent un raisonnement cloud avancé.',
     lab_acc2_title: 'Connectivité Intelligente',
-    lab_acc2_text: 'Des cartes légères, de l\'audio mis en cache et une base de données locale garantissent un fonctionnement fluide — même avec un signal faible ou absent.',
+    lab_acc2_text: 'Des cartes légères et une gestion intelligente des données garantissent une expérience fluide — chargement rapide, faible consommation, même sur des connexions lentes.',
     lab_acc3_title: 'Multilingue par Design',
     lab_acc3_text: 'Des voix naturelles en plusieurs langues, propulsées par de l\'IA auto-hébergée. Chaque traduction est revue par des humains pour garantir la qualité.',
 
@@ -254,9 +254,9 @@ const LORY_I18N = {
 
     feat2_tag: 'استرجاع ذكي',
     feat2_title: 'قصص صوتية<br />تجدك تلقائياً',
-    feat2_text: 'مشغلات القرب عبر GPS تبدأ السرد عندما تقترب من أي نقطة اهتمام. حمّل مرة واحدة، استمع في أي مكان — لا حاجة لإشارة.',
+    feat2_text: 'مشغلات القرب عبر GPS تبدأ السرد عندما تقترب من أي نقطة اهتمام. إرشاد صوتي بالوقت الفعلي، بقوة الذكاء الاصطناعي.',
     feat2_list1: 'كشف تلقائي ضمن 50 متراً من أي نقطة اهتمام',
-    feat2_list2: 'خرائط وصوت قابل للتحميل لمناطق الاتصال الضعيف',
+    feat2_list2: 'بث ذكي يتكيف مع اتصالك',
     feat2_list3: 'سرد غامر لمدة 60 ثانية لكل موقع',
     feat2_vis_label: 'خريطة صوتية ذكية',
     feat2_vis_sub: 'قصص موزعة عبر المدينة.',
@@ -266,7 +266,7 @@ const LORY_I18N = {
     lab_acc1_title: 'ذكاء اصطناعي ذكي في النواة',
     lab_acc1_text: 'نظام هجري يوازن بين السرعة والذكاء — معظم الاستعلامات تُعالج فوراً على الجهاز، بينما الأسئلة المعقدة تستفيد من استدلال سحابي متقدم.',
     lab_acc2_title: 'اتصال ذكي',
-    lab_acc2_text: 'خرائط خفيفة وصوت مخزون وقاعدة بيانات محلية تضمن سلاسة التشغيل — حتى مع إشارة ضعيفة أو معدومة.',
+    lab_acc2_text: 'خرائط خفيفة وإدارة ذكية للبيانات تضمن تجربة سلسة — تحميل سريع واستهلاك بيانات منخفض، حتى على اتصالات بطيئة.',
     lab_acc3_title: 'تعدد اللغات بالتصميم',
     lab_acc3_text: 'أصوات طبيعية بعدة لغات، بقوة ذكاء اصطناعي مستضاف ذاتياً. كل ترجمة تتم مراجعتها من قبل البشر لضمان الجودة.',
 
